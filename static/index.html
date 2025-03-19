@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corteza Cerebral</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-top: 50px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 80%;
+            margin: 20px 0;
+            border: 5px solid #3498db;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            font-size: 1.2em;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <h1>IMÁGENES DE LA CORTEZA CEREBRAL</h1>
+    <div class="container">
+        <img src="{{ url_for('static', filename='imagen_grafico.png') }}" alt="Imagen corteza cerebral 1">
+        <img src="{{ url_for('static', filename='img2.png') }}" alt="Imagen corteza cerebral 2">
+    </div>
+    <footer>
+     
+    </footer>
+</body>
+</html>
